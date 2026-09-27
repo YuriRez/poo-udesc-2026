@@ -1,7 +1,7 @@
 package exercicio1oo.classes;
 
 public class TestaAluno {
-    public static void main() {
+     static void main() {
         Aluno yuri = new Aluno();
         yuri.matricula = "321";
         yuri.nome = "yuri";
