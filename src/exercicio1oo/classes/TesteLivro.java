@@ -6,7 +6,7 @@ public class TesteLivro {
         ring.titulo = "Senhor dos Aneis";
         ring.autor = "John Ronald Reuel Tolkien";
         ring.genero = "Fantasia";
-        ring.emprestado = true; //para testar pode alterar entre true e false
+        ring.emprestado = false; //para testar pode alterar entre true e false
         System.out.println("Titulo do livro:" + ring.titulo);
         System.out.println("Autor:" + ring.autor);
         System.out.println("Genero do livro:" + ring.genero);
