@@ -8,8 +8,8 @@ public class TesteContaBancaria {
         op.setNumeroConta("3596");
         op.setTitular("Yuri Rezende de Oliveira");
         op.setSaldo(25000.95);
-        System.out.println("Numero da conta:" + op.getNumeroConta());
-        System.out.println("Titular da conta:" + op.getTitular());
-        System.out.println("Saldo:" + op.getSaldo());
+        System.out.printf("Número da conta: %s\n", op.getNumeroConta());
+        System.out.printf("Titular da conta: %s\n", op.getTitular());
+        System.out.printf("Saldo: %.2f\n", op.getSaldo());
     }
 }

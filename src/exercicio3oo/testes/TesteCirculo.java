@@ -6,6 +6,6 @@ public class TesteCirculo {
     static void main() {
         Circulo cir = new Circulo();
         cir.setRaio(3.14);
-        System.out.println("Raio:" + cir.getRaio());
+        System.out.printf("Raio: %.2f", cir.getRaio());
     }
 }

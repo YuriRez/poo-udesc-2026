@@ -12,12 +12,12 @@ public class TestaAluno {
         yuri.setNota2(9);
         yuri.setNota3(10);
         yuri.setNota4(6);
-        System.out.println("Matrícula: " + yuri.getMatricula());
-        System.out.println("Nome: " + yuri.getNome());
-        System.out.println("Idade: " + yuri.getIdade());
-        System.out.println("Nota 1: " + yuri.getNota1());
-        System.out.println("Nota 2: " + yuri.getNota2());
-        System.out.println("Nota 3: " + yuri.getNota3());
-        System.out.println("Nota 4: " + yuri.getNota4());
+        System.out.printf("Matrícula: %s \n", yuri.getMatricula());
+        System.out.printf("Nome: %s \n", yuri.getNome());
+        System.out.printf("Idade: %d \n", yuri.getIdade());
+        System.out.printf("Nota 1: %d \n", yuri.getNota1());
+        System.out.printf("Nota 2: %d \n", yuri.getNota2());
+        System.out.printf("Nota 3: %d \n", yuri.getNota3());
+        System.out.printf("Nota 4: %d \n", yuri.getNota4());
     }
 }

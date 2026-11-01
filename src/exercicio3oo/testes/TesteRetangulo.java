@@ -7,7 +7,7 @@ public class TesteRetangulo {
         Retangulo ret = new Retangulo();
         ret.setAltura(1.5);
         ret.setLargura(2.8);
-        System.out.println("Altura:" + ret.getAltura());
-        System.out.println("Largura:" + ret.getLargura());
+        System.out.printf("Altura: %.2f\n", ret.getAltura());
+        System.out.printf("Largura: %.2f\n", ret.getLargura());
     }
 }
