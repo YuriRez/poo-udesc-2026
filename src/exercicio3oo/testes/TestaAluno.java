@@ -3,7 +3,7 @@ package exercicio3oo.testes;
 import exercicio3oo.classes.Aluno;
 
 public class TestaAluno {
-     static void main() {
+    static void main() {
         Aluno yuri = new Aluno();
         yuri.setMatricula("321");
         yuri.setNome("yuri");
