@@ -10,5 +10,10 @@ public class TestaUtils {
         System.out.println(Utils.max(-3,-5));
 
         System.out.println("Alunos cadastrados: " + Aluno.quantidadeAlunos);
+        Aluno ze = new Aluno();
+        System.out.println("Alunos cadastrados: " + Aluno.quantidadeAlunos);
+        Aluno maria = new Aluno();
+        System.out.println("Alunos cadastrados: " + Aluno.quantidadeAlunos);
     }
+
 }

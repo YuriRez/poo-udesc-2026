@@ -7,6 +7,6 @@ public class Aluno {
 
     public Aluno(){
         quantidadeAlunos++;
-        System.out.println("Criando o " + quantidadeAlunos + "º");
+        System.out.println("Criando o(a) " + quantidadeAlunos + "º aluno(a)");
     }
 }
