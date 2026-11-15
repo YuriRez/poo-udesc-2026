@@ -12,6 +12,11 @@ public class TesteCarro {
         System.out.printf("Modelo do carro: %s\n", ferrari.getModelo());
         System.out.printf("Marca do carro: %s\n", ferrari.getMarca());
         System.out.printf("Ano em que foi produzido: %d\n", ferrari.getAno());
-        System.out.printf("Velocidade máxima: %.2f\n", ferrari.getVelocidade());
+        System.out.printf("Velocidade: %.2f\n", ferrari.getVelocidade());
+
+        ferrari.imprimirVelocidade();
+        ferrari.acelerar();
+        ferrari.frear();
+        ferrari.imprimirVelocidade();
     }
 }
