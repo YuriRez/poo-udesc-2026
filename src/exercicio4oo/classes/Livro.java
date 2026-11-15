@@ -1,6 +1,10 @@
 package exercicio4oo.classes;
 
  public class Livro {
+     private static final String MENSAGEM_EMPRESTADO = "Livro emprestado\n";
+     private static final String MENSAGEM_DEVOLVIDO = "Livro devolvido\n";
+
+
      private String titulo;
      private String autor;
      private String genero;
@@ -36,5 +40,19 @@ package exercicio4oo.classes;
 
      public void setTitulo(String titulo) {
          this.titulo = titulo;
+     }
+
+     public void emprestar() {
+         emprestado = true;
+         System.out.printf(MENSAGEM_EMPRESTADO);
+     }
+
+     public void devolver() {
+         emprestado = false;
+         System.out.printf(MENSAGEM_DEVOLVIDO);
+     }
+
+     public boolean estaDisponivel() {
+         return !emprestado;
      }
  }
