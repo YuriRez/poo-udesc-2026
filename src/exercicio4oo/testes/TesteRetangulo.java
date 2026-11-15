@@ -9,5 +9,6 @@ public class TesteRetangulo {
         ret.setLargura(2.8);
         System.out.printf("Altura: %.2f\n", ret.getAltura());
         System.out.printf("Largura: %.2f\n", ret.getLargura());
+        System.out.printf("Área: %.2f\n", ret.calcularArea());
     }
 }
