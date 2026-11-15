@@ -1,6 +1,8 @@
 package exercicio4oo.classes;
 
  public class ContaBancaria {
+     private static final String MENSAGEM_SALDO = "Saldo atual: R$ %.2f\n";
+
      private String numeroConta;
      private String titular;
      private double saldo;
@@ -27,5 +29,16 @@ package exercicio4oo.classes;
 
      public void setSaldo(double saldo) {
          this.saldo = saldo;
+     }
+     public void depositar(double valor) {
+         saldo += valor;
+     }
+
+     public void sacar(double valor) {
+         saldo -= valor;
+     }
+
+     public void imprimirSaldo() {
+         System.out.printf(MENSAGEM_SALDO, saldo);
      }
  }

@@ -11,5 +11,11 @@ public class TesteContaBancaria {
         System.out.printf("Número da conta: %s\n", op.getNumeroConta());
         System.out.printf("Titular da conta: %s\n", op.getTitular());
         System.out.printf("Saldo: %.2f\n", op.getSaldo());
+
+        op.imprimirSaldo();
+        op.depositar(1000);
+        op.imprimirSaldo();
+        op.sacar(500.50);
+        op.imprimirSaldo();
     }
 }
