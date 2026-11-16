@@ -7,20 +7,16 @@ public class TesteLivro {
     private static final String MENSAGEM_INDISPONIVEL = "Este livro já foi emprestado\n";
 
     static void main() {
-        Livro ring = new Livro();
-        ring.setTitulo("Senhor dos Aneis");
-        ring.setAutor("John Ronald Reuel Tolkien");
-        ring.setGenero("Fantasia");
-        ring.setEmprestado(false);//para testar pode alterar entre true e false
-        System.out.printf("Título do livro: %s\n", ring.getTitulo());
-        System.out.printf("Autor: %s\n", ring.getAutor());
-        System.out.printf("Gênero do livro: %s\n", ring.getGenero());
-
+        Livro ring = new Livro("Senhor dos Aneis", "John Ronald Reuel Tolkien", "Fantasia", false);
+        System.out.println(ring);
         imprimirDisponibilidade(ring);
         ring.emprestar();
         imprimirDisponibilidade(ring);
+        ring.devolver();
+        imprimirDisponibilidade(ring);
 
     }
+
     private static void imprimirDisponibilidade(Livro livro) {
         if (livro.estaDisponivel()) {
             System.out.printf(MENSAGEM_DISPONIVEL);
