@@ -4,15 +4,8 @@ import exercicio5oo.classes.ContaBancaria;
 
 public class TesteContaBancaria {
     static void main() {
-        ContaBancaria op = new ContaBancaria();
-        op.setNumeroConta("3596");
-        op.setTitular("Yuri Rezende de Oliveira");
-        op.setSaldo(25000.95);
-        System.out.printf("Número da conta: %s\n", op.getNumeroConta());
-        System.out.printf("Titular da conta: %s\n", op.getTitular());
-        System.out.printf("Saldo: %.2f\n", op.getSaldo());
-
-        op.imprimirSaldo();
+        ContaBancaria op = new ContaBancaria("3596", "Yuri Rezende de Oliveira", 25000.95);
+        System.out.println(op);
         op.depositar(1000);
         op.imprimirSaldo();
         op.sacar(500.50);
